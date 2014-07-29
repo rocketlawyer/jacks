@@ -1,10 +1,12 @@
 jacks - Jackson module for Scala
 
+  This is the Rocketlawyer fork of jacks.
+
   Jacks provides a Jackson Module for reading and writing common Scala data
   types, including mutable & immutable collections, Option, Tuple, Symbol,
   and case classes.
 
-  This version of jacks has been tested against Scala 2.11.1, and Jackson 2.3.3
+  This version of jacks has been tested against Scala 2.11.2.
 
   Join the lambdaWorks-OSS Google Group to discuss this project:
 
@@ -94,10 +96,10 @@ Maven Artifacts
 
   Releases of jacks are available in the maven central repository:
 
-  "com.lambdaworks" %% "jacks" % "2.3.3"
+  "com.rocketlawyer" %% "jacks" % "1.0.0"
 
   <dependency>
-    <groupId>com.lambdaworks</groupId>
+    <groupId>com.rocketlawyer</groupId>
     <artifactId>jacks_2.11</artifactId>
-    <version>2.3.3</version>
+    <version>1.0.0</version>
   </dependency>

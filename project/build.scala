@@ -4,11 +4,11 @@ import Keys._
 object JacksBuild extends Build {
   val buildSettings = Project.defaultSettings ++ Seq(
     name         := "jacks",
-    version      := "2.3.3",
-    organization := "com.lambdaworks",
-    scalaVersion := "2.11.0",
+    version      := "1.0.0",
+    organization := "com.rocketlawyer",
+    scalaVersion := "2.11.2",
 
-    crossScalaVersions := Seq("2.11.0"),
+    crossScalaVersions := Seq("2.11.2"),
 
     libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-reflect" % _),
     libraryDependencies ++= Seq(
@@ -31,12 +31,12 @@ object JacksBuild extends Build {
 
     pomIncludeRepository := { _ => false },
     pomExtra             := (
-      <url>http://github.com/wg/jacks</url>
+      <url>http://github.com/rocketlawyer/jacks</url>
 
       <scm>
-        <connection>scm:git:git://github.com/wg/jacks.git</connection>
-        <developerConnection>scm:git:git://github.com/wg/jacks.git</developerConnection>
-        <url>http://github.com/wg/jacks</url>
+        <connection>scm:git:git://github.com/rocketlawyer/jacks.git</connection>
+        <developerConnection>scm:git:git://github.com/rocketlawyer/jacks.git</developerConnection>
+        <url>http://github.com/rocketlawyer/jacks</url>
       </scm>
 
       <licenses>
@@ -51,6 +51,10 @@ object JacksBuild extends Build {
         <developer>
           <id>will</id>
           <name>Will Glozer</name>
+        </developer>
+        <developer>
+          <id>clhodapp</id>
+          <name>Chris Hodapp</name>
         </developer>
       </developers>
     )
